@@ -16,15 +16,15 @@ function About() {
             <p>
               My journey into software engineering began in healthcare, where I
               served as a Community Adolescent Treatment Supporter (CATs). That
-              experience shaped my empathy, communication, and problem-solving —
-              and showed me how real-world challenges can be improved through
+              experience shaped my empathy, communication, and problem solving
+              and showed me how real world challenges can be improved through
               technology.
             </p>
             <p>
               My path into tech itself started with a crash course covering
               Digital Marketing, Product Design, and Software Engineering. Along
-              the way I learned UI/UX fundamentals — including empathy mapping
-              and SWOT analysis — through building Dreamlance, a marketplace
+              the way I learned UI/UX fundamentals including empathy mapping
+              and SWOT analysis through building Dreamlance, a marketplace
               solving trust issues between clients and freelancers. I ultimately
               chose to specialize in Software Engineering, and that broader
               foundation now shapes how I build: with the end user and business

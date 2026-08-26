@@ -17,6 +17,11 @@ body {
   min-width: 320px;
   background: #050816;
   color: white;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* Make anchors scroll below fixed header and ensure images scale */

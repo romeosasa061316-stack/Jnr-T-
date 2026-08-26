@@ -1,4 +1,5 @@
 import pythonCert from "../assets/pythoncert.png";
+import colorcert from "../assets/colorproduct.png"
 
 const certificates = [
   {
@@ -9,6 +10,17 @@ const certificates = [
     image: pythonCert,
     link: "#",
   },
+
+
+  {
+    id: 2,
+    title: "Color Psychology",
+    issuer: "Uxcel",
+    date: "2026",
+    image: colorcert,
+    link: "#",
+  },
+
 ];
 
 export default certificates;

@@ -3,13 +3,12 @@ import { SiGmail } from "react-icons/si";
 
 function Contact() {
   return (
-    <section id="contact" className="bg-slate-950 text-white py-12 md:py-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section id="contact" className="bg-slate-950 text-white py-12 sm:py-16 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
 
-          {/* Left: Contact Form */}
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold">Hubungi Saya</h2>
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 sm:p-8">
+            <h2 className="text-2xl font-bold">Romeo Jnr</h2>
             <p className="text-gray-400 text-sm mt-2">
               Feel free to reach out if you want to collaborate, discuss ideas, or simply say hello.
             </p>
@@ -72,7 +71,7 @@ function Contact() {
                 type="submit"
                 className="bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-semibold transition"
               >
-                ✈ Send Message
+                 Send Message
               </button>
             </form>
 
@@ -107,7 +106,7 @@ function Contact() {
           </div>
 
           {/* Right: Comments */}
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl px-10 py-8">
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl px-5 sm:px-8 py-8">
             <h2 className="text-2xl font-bold">Comments</h2>
             <p className="text-gray-400 text-sm mt-2">Leave your thoughts here</p>
 
