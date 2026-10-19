@@ -3,12 +3,11 @@ import calcImg from "../assets/nice.png";
 import djangoImg from "../assets/djangopic.png";
 import dreamlanceImg from "../assets/dreamlance.png";
 import dmImg from "../assets/RoyalP.png";
+
 import dreamlanceCase from "../assets/dreamlance-case-study.pdf";
 import dmCase from "../assets/dm-case-study.pdf";
 
-
 const projects = [
-
   {
     id: 1,
     category: "uiux",
@@ -18,12 +17,11 @@ const projects = [
     technologies: [
       "UI/UX Design",
       "Empathy Mapping",
-      "SWOT Analysis"
+      "SWOT Analysis",
     ],
     github: dreamlanceCase,
     image: dreamlanceImg,
   },
-
 
   {
     id: 2,
@@ -34,12 +32,11 @@ const projects = [
     technologies: [
       "Digital Marketing",
       "Campaign Strategy",
-      "Social Media"
+      "Social Media",
     ],
     github: dmCase,
     image: dmImg,
   },
-
 
   {
     id: 3,
@@ -50,12 +47,11 @@ const projects = [
     technologies: [
       "JavaScript",
       "HTML",
-      "CSS"
+      "CSS",
     ],
     github: "#",
     image: todoImg,
   },
-
 
   {
     id: 4,
@@ -66,12 +62,11 @@ const projects = [
     technologies: [
       "JavaScript",
       "HTML",
-      "CSS"
+      "CSS",
     ],
     github: "#",
     image: calcImg,
   },
-
 
   {
     id: 5,
@@ -82,13 +77,11 @@ const projects = [
     technologies: [
       "Python",
       "Django",
-      "SQLite"
+      "SQLite",
     ],
     github: "#",
     image: djangoImg,
   },
-
 ];
-
 
 export default projects;

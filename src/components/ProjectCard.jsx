@@ -7,46 +7,42 @@ function ProjectCard({ project }) {
       : "View Project";
 
   return (
-    <div
+    <article
       className="
-      group
-      bg-slate-900
-      border
-      border-slate-800
-      rounded-3xl
-      overflow-hidden
-      shadow-lg
-      hover:shadow-blue-500/20
-      hover:border-blue-500
-      hover:-translate-y-2
-      transition-all
-      duration-300
+        group
+        bg-slate-900
+        border border-slate-800
+        rounded-2xl
+        overflow-hidden
+        shadow-lg
+        hover:border-blue-500/60
+        hover:shadow-blue-500/10
+        hover:-translate-y-1
+        transition-all
+        duration-300
       "
     >
       {/* Project Image */}
-
-      <div className="relative overflow-hidden h-56">
+      <div className="relative h-56 overflow-hidden">
         <img
-          src={project.image || "https://via.placeholder.com/600x400"}
+          src={project.image}
           alt={project.title}
           className="
-          w-full
-          h-full
-          object-cover
-          transition-transform
-          duration-500
-          group-hover:scale-110
+            w-full
+            h-full
+            object-cover
+            transition-transform
+            duration-500
+            group-hover:scale-105
           "
         />
 
-        <div className="absolute inset-0 bg-gradient-to-to from-slate-950 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
       </div>
 
-      {/* Content */}
-
+      {/* Project Content */}
       <div className="p-6">
-
-        <h3 className="text-2xl font-bold text-white mb-3">
+        <h3 className="text-xl font-bold text-white mb-3">
           {project.title}
         </h3>
 
@@ -55,20 +51,19 @@ function ProjectCard({ project }) {
         </p>
 
         {/* Technologies */}
-
         <div className="flex flex-wrap gap-2 mb-6">
           {project.technologies.map((tech, index) => (
             <span
-              key={index}
+              key={`${tech}-${index}`}
               className="
-              px-3
-              py-1
-              rounded-full
-              bg-blue-600/10
-              border
-              border-blue-500/20
-              text-blue-300
-              text-xs
+                px-3
+                py-1
+                rounded-full
+                bg-blue-500/10
+                border border-blue-500/20
+                text-blue-300
+                text-xs
+                font-medium
               "
             >
               {tech}
@@ -77,10 +72,8 @@ function ProjectCard({ project }) {
         </div>
 
         {/* Footer */}
-
-        <div className="flex items-center justify-between">
-
-          <span className="text-sm text-gray-500">
+        <div className="flex items-center justify-between gap-4">
+          <span className="text-xs text-gray-500">
             Portfolio Project
           </span>
 
@@ -89,23 +82,24 @@ function ProjectCard({ project }) {
             target="_blank"
             rel="noopener noreferrer"
             className="
-            bg-blue-600
-            hover:bg-blue-700
-            text-white
-            px-5
-            py-2.5
-            rounded-full
-            font-medium
-            transition
+              bg-blue-600
+              hover:bg-blue-700
+              text-white
+              px-5
+              py-2.5
+              rounded-lg
+              font-medium
+              text-sm
+              transition-colors
+              duration-200
+              whitespace-nowrap
             "
           >
             {buttonLabel}
           </a>
-
         </div>
-
       </div>
-    </div>
+    </article>
   );
 }
 
